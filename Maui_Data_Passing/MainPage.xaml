@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_Data_Passing.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Corey Potts" FontSize="24" HorizontalOptions="Center" />
+            <Label Text="Add and Subtract" FontSize="18" HorizontalOptions="Center" />
+
+            <Label Text="First Value" />
+            <Entry x:Name="FirstEntry" Placeholder="Enter first number" Keyboard="Numeric" />
+
+            <Label Text="Second Value" />
+            <Entry x:Name="SecondEntry" Placeholder="Enter second number" Keyboard="Numeric" />
+
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button Text="Addition" Clicked="OnAdditionClicked" />
+                <Button Text="Subtraction" Clicked="OnSubtractionClicked" />
+            </HorizontalStackLayout>
+
+            <Label x:Name="MessageLabel" Text="" FontSize="24" HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
